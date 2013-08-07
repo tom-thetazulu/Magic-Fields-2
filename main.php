@@ -122,7 +122,7 @@ load_plugin_textdomain('magic_fields', '/'.PLUGINDIR.'/'.dirname(plugin_basename
   function mf_admin() {
     global $mf_domain;
 
-    add_menu_page('Magic Fields','Magic Fields','activate_plugins','mf_dispatcher','mf_dispatcher',MF_BASENAME.'/images/wand-hat.png');
+    add_menu_page('Magic Fields','Magic Fields','manage_options','mf_dispatcher','mf_dispatcher',MF_BASENAME.'/images/wand-hat.png');
 
     add_submenu_page('mf_dispatcher', __('import',$mf_domain), __('Import',$mf_domain), 'edit_pages','mf_dispatcher&mf_section=mf_posttype&mf_action=import_form_post_type', 'mf_dispatcher');
   }
